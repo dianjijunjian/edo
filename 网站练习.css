@@ -1,128 +1,437 @@
-body{
-	margin: 0;
+body {
+    margin: 0;
 }
-.container{
-	width: 1024px;
-	margin: 0 auto;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-.header-box{
-	position: relative;
-	height:100vh;
-	background: #192314;
-	overflow: hidden;
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
 }
-.header-text-box{
-	width: 652px;
-	height: 503px;
-	background-size: 900px auto;
-	float: right;
+
+.header-box {
+    position: relative;
+    height: 100vh;
+    background: #192314;
+    overflow: hidden;
 }
-.header-pic-box{
-	width:652px;
-	height: 500px;
-	background:url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/slider/beosound-shape/green-beosound-shape-desktop.jpg);
-	background-size: 100% auto;
-	float: right;
+
+.header-text-box {
+    width: 652px;
+    height: 503px;
+    background-size: 900px auto;
+    float: right;
 }
-.header-text-box{
-	width: 512px;
-	height: 208px;
-	/*background:#4CAF50;*/
-	position: absolute;
-	left: 100px;
-	top:150px;
+
+.header-pic-box {
+    width: 652px;
+    height: 500px;
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/slider/beosound-shape/green-beosound-shape-desktop.jpg);
+    background-size: 100% auto;
+    float: right;
 }
-.description{
-	font-size: 12px;
-	color: white;
-	margin-top: 15px;
-	margin-bottom: 30px;
+
+.header-text-box {
+    width: 512px;
+    height: 208px;
+    /*background:#4CAF50;*/
+    position: absolute;
+    left: 100px;
+    top: 150px;
 }
-.title{
-	font-weight: normal;
-	letter-spacing: 3.75px;
-	font-size: 50px;
-	line-height: 39px;
-	margin-top: 15px;
-	margin-bottom: 30px;
-	color: white;
+
+.description {
+    font-size: 12px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
-.small-desc{
-	font-size: 12px;
-	color: white;
+
+.title {
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size: 50px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
 }
-.button{
-	font-size: 12px;
-	color:white;
+
+.small-desc {
+    font-size: 12px;
+    color: white;
 }
-.bottom{
-	width:1024px;
-	height:536px;
-	background:url(img-bg-1350.jpg);
-	background-size:100%;
-	top:768px;
-	background-repeat: no-repeat;
+
+.button {
+    display: block;
+    line-height: 11px;
+    width: 231px;
+    padding: 12px 35px;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-style: normal;
+    text-align: center;
+
 }
-.squ{
-	width: 660px;
-	height: 320px;
-	background: red;
-	top: 700px;
-	left: 382px;
-	position: absolute;
-	float: 
+
+.bottom {
+    width: 1024px;
+    height: 410px;
+    background: url(img-bg-1350.jpg);
+    background-size: 100%;
+    top: 768px;
 }
-.p1{
-	width: 220px;
-	height: 333px;
-	float: left;
-	background: url(beovision-eclipse-frontpage-brass-smoked-oak-2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
+
+.squ {
+    width: 821px;
+    height: 353px;
+    padding: 0 58px;
+    margin: 0 auto;
+    margin-top: -48px;
+    position: relative;
+    z-index: 100;
 }
-.p2{
-	width: 220px;
-	height: 333px;
-	float: left;
-	background: url(beoplay-p6-8.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
+
+.p1 {
+    width: 220px;
+    height: 333px;
+    float: left;
+    background: url(beovision-eclipse-frontpage-brass-smoked-oak-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.p3{
-	width: 220px;
-	height: 333px;
-	float: left;
-	background: url(earset-subtile1.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
+
+.p2 {
+    width: 220px;
+    height: 333px;
+    float: left;
+    background: url(beoplay-p6-8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.w1{
-	font-weight: normal;
-	letter-spacing: 3.75px;
-	font-size: 10px;
-	line-height: 39px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-	color: white;
-	padding-left: 15px;
+
+.p3 {
+    width: 220px;
+    height: 333px;
+    float: left;
+    background: url(earset-subtile1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.w2{
-	font-weight: normal;
-	letter-spacing: 3.75px;
-	font-size: 10px;
-	line-height: 39px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-	color: white;
-	padding-left: 15px;
+
+.w1, .w2, .w3 {
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size: 10px;
+    line-height: 39px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    padding-left: 15px;
 }
-.w3{
-	font-weight: normal;
-	letter-spacing: 3.75px;
-	font-size: 10px;
-	line-height: 39px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-	color: white;
-	padding-left: 15px;
+
+.top-menu {
+    height: 57px;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.left1, .right1 {
+    height: 100%;
+    width: 128px;
+    line-height: 57px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.left1 {
+    background: url(QQ图片20180607162039.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.right1 {
+    background: url(QQ图片20180607162120.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.center {
+    height: 100%;
+    line-height: 57px;
+    width: 190px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.title-box {
+    text-align: center;
+    padding-top: 90px;
+    height: 318px;
+}
+
+.title-box h2 {
+    margin: 25px 0 40px 0;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 4px;
+}
+
+.title-box h6 {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 13px;
+    margin: 12px 0 18px 0;
+}
+
+.product-list {
+    margin: 0 auto;
+    width: 705px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 235px;
+    height: 155px;
+    /*border:1px solid black;*/
+}
+
+.product:nth-child(1) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/wireless-speaker-systems/beosound-shape.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(2) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/televisions/beovision-eclipse.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(3) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/speakers/beolab-50.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(4) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/headphones/beoplay-h9i.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(5) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/portable-bluetooth-speakers/beoplay-p6-lifestyle-3.jpg);
+    background-size: 100% auto;
+}
+
+.product:nth-child(6) {
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/categories/sound-systems/beosound-core.jpg);
+    background-size: 100% auto;
+}
+
+.v1, .v2, .v3, .v4, .v5, .v6 {
+    font-weight: normal;
+    letter-spacing: 4px;
+    font-size: 10px;
+    line-height: 39px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    padding-left: 15px;
+}
+
+.picture-list {
+    margin: 0 auto;
+    width: 712px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture {
+    height: 170px;
+}
+
+.picture:nth-child(1) {
+    width: 178px;
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/stories/design-as-a-group-effort-01.jpg);
+    background-size: 100% auto;
+}
+
+.picture:nth-child(2) {
+    width: 178px;
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/stories/the-krane.jpg);
+    background-size: 100% auto;
+}
+
+.picture:nth-child(3) {
+    width: 356px;
+    background: url(https://www.bang-olufsen.com/~/mediaV3/home/frontpage/stories/harmonies/desktop/harmonies-story.jpg);
+    background-size: 100% auto;
+}
+
+.story-list {
+    margin: 0 auto;
+    width: 712px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.story {
+    height: 150px;
+    padding-top: 30px;
+    float: left;
+    line-height: 21px;
+}
+
+.story h2 {
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.story:nth-child(1) {
+    width: 178px;
+}
+
+.story:nth-child(2) {
+    width: 178px;
+}
+
+.story:nth-child(3) {
+    width: 356px;
+}
+
+.info-box {
+    padding: 0 14px;
+    height: 500px;
+    display: flex;
+    border-top: 1px solid #f2f2f2;
+}
+
+.info-item {
+    padding-top: 88px;
+    width: 498px;
+    height: 100%;
+    /*background: #7273ff;*/
+}
+
+.info-item .icon {
+    width: 54px;
+    height: 54px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+}
+
+.info-item:nth-child(1) .icon {
+    border-right: 1px solid #f2f2f2;
+    background: #000 url(news.png) no-repeat center center;
+}
+
+.info-item:nth-child(2) .icon {
+    background: #000 url(location.png) no-repeat center center;
+}
+
+.info-item input {
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 12px auto 40px auto;
+    width: 372px;
+    height: 56px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 17px;
+    display: block;
+}
+
+.info-item h5 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 17px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.info-item h6 {
+    margin: 18px 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    text-align: center;
+}
+
+.location-desc {
+    width: 290px;
+    margin: 18px auto;
+}
+
+.info-item .button {
+    width: 200px;
+    height: 41px;
+    margin: 8px auto;
+    background: rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 12px;
+}
+
+.info-item .search {
+    margin-top: 116px;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    height: 82px;
+    padding: 20px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    width: 350px;
+    line-height: 20px;
+    height: 20px;
+    padding-left: 25px;
+    background: url(earth.png) no-repeat left 3px;
+}
+
+.footer .left a {
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer .right {
+    width: 840px;
+    height: 42px;
+    padding: 0 14px;
+    /*background: #ffd649;*/
+}
+
+.footer .right a {
+    display: block;
+    margin-left: 16px;
+    height: 15px;
+    /*background: #72d4ff;*/
+    float: right;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
 }
